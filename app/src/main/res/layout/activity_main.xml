@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.android.calculator.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/textView"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/firstNumbers"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textView"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="80dp"
+            android:paddingLeft="20dp"
+            android:text="1"/>
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="80dp"
+            android:paddingLeft="20dp"
+            android:text="2"/>
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="80dp"
+            android:paddingLeft="20dp"
+            android:text="3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SecondNumbers"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/firstNumbers"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="80dp"
+            android:paddingLeft="20dp"
+            android:text="4"/>
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="80dp"
+            android:paddingLeft="20dp"
+            android:text="5"/>
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="80dp"
+            android:paddingLeft="20dp"
+            android:text="6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ThirdNumbers"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/SecondNumbers"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="80dp"
+            android:paddingLeft="20dp"
+            android:text="7"/>
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="80dp"
+            android:paddingLeft="20dp"
+            android:text="8"/>
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="80dp"
+            android:paddingLeft="20dp"
+            android:text="9"/>
+    </LinearLayout>
+
+</RelativeLayout>
